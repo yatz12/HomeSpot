@@ -1,0 +1,40 @@
+<!--
+  Generated template for the DeviceListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Device List</ion-title>
+    <!-- <img style="margin-left: 85%; width:6%" src="assets/icon/cancel.png"> -->
+    <ion-buttons end (click)="goBack()">
+        <div > 
+            <img style="width:20px;" src="assets/icon/cancel.png" >
+        </div>
+    </ion-buttons>
+    
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content no-padding>
+<ion-list no-lines>
+<ion-item no-lines>
+   
+  <img item-left src="assets/icon/call-music.png">
+<ion-label>HTC PRO</ion-label>
+  
+<img item-right src="assets/icon/Link-icon.png" (click)="selectOptions()" >
+</ion-item>
+<ion-item no-lines>
+    <img item-left src="assets/icon/phonecall.png">
+    <ion-label>Samsung S8</ion-label>
+    </ion-item>
+</ion-list>
+<button ion-button (click)="pairNew()" >Pair new</button>
+<p></p>
+<p></p>
+</ion-content>

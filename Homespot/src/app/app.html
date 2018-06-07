@@ -1,0 +1,131 @@
+<ion-menu  id="authenticated" side="left"   [content]="content" >
+    <!-- <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header> -->
+  
+    <ion-content style=" background-color: #70AF20;" >
+      <img style="  display: block; margin-left: auto;margin-right: auto; width: 25%;margin-top:26%" src="assets/imgs/HomeSpot-logo.png">
+      <!-- <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          {{p.title}}
+        </button>
+      </ion-list> -->
+      <!-- <ion-label>{{id}}</ion-label> -->
+      <p style="color:white;text-align:center;font-size:2rem;padding-top:10px;">HomeSpot </p>
+  
+      <ion-list no-lines style=" border-bottom: 0.1px solid #c8c7cc;padding-top:25px; ">
+          <ion-item menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px;  border-bottom: 0.1px solid #97bc5e;" (click)="moveToHome()">
+            //#c8c7cc
+              <ion-label class="label-style" >Discover and Link </ion-label>
+          </ion-item>
+          <ion-item  menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; "  (click)="moveToProductRegistration()" >
+              <ion-label class="label-style" >Product Registration</ion-label>
+          </ion-item>
+          <ion-item menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; " (click) = "openInBrowser()" >
+              <ion-label class="label-style" >Product help </ion-label>
+          </ion-item>
+          <ion-item menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; "  (click)="moveToFeatureRequest()" >
+              <ion-label class="label-style" >Feature request </ion-label>
+          </ion-item>
+          <ion-item  menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; "  (click)="moveToContactUs()">
+              <ion-label class="label-style" >Contact us </ion-label>
+          </ion-item>
+      </ion-list>
+    
+        <p style="color:rgb(187, 224, 130);text-align:center;font-size:1.4rem;font-weight:50; padding-top:20%">App Version 1.0</p>
+   
+    </ion-content>
+  
+  </ion-menu>
+
+  <ion-menu id="unauthenticated" side="right" [content]="content" id="menu2" class="menu-style" >
+
+      <!-- <ion-header>
+        <ion-toolbar color="danger">
+          <ion-title>Menu 2</ion-title>
+        </ion-toolbar>
+      </ion-header> -->
+    
+      <ion-content no-padding style=" background-color: #37434F; ">
+       
+        <!-- <ion-list  no-lines style=" border-bottom: 0.1px solid #c8c7cc;padding-top:60%; ">
+          <!-- <button ion-item menuClose="menu2" detail-none>
+            Close Menu 2
+          </button> -->
+          <!-- <ion-item menuClose style="background-color:#37434F; border-top:0px; height: 50px;  border-bottom: 0.1px solid #4c5c69;" (click)="moveToHome()">
+           
+              <ion-label class="label-style" >Customization </ion-label>
+          </ion-item>
+          <ion-item  menuClose style="background-color:#37434F; border-top:0px; height: 50px; border-bottom: 0.1px solid #4c5c69; "  (click)="moveToProductRegistration()" >
+              <ion-label class="label-style" >Device List</ion-label>
+          </ion-item>
+
+          <ion-item  menuClose style="background-color:#37434F; border-top:0px; height: 50px; border-bottom: 0.1px solid #4c5c69; "  (click)="moveToProductRegistration()" >
+            <ion-label class="label-style" >Audio Effect</ion-label>
+        </ion-item>
+         
+        </ion-list>  -->
+      <!-- <div style="color:red">
+        <hr>
+        </div> -->
+        <div class="split left" >
+            <!-- <div class="vl"></div> -->
+          <div class="centered" >
+            <!-- <img src="img_avatar2.png" alt="Avatar woman">
+            <h2>Jane Flex</h2>
+            <p>Some text.</p> -->
+            <!-- <div style="color:red">
+                <hr>
+                </div> -->
+          
+            <ion-list no-lines style="padding-top:50%;">
+              <ion-item  style="background-color: #37434F;margin-bottom:50%;margin-top:50%">
+               
+                 <img class="arrow-style" menuclose="right" (click)="goToLRReceiver()" style="margin-top:-85%" item-right src="assets/icon/right-arrow-angle.png">
+              </ion-item>
+             
+              <ion-item  style="background-color: #37434F;margin-bottom:50%;margin-top:50%">
+              
+                 <img  menuclose="right" (click)="goToLRReceiver()" style="margin-top:40%" item-right src="assets/icon/right-arrow-angle.png">
+              </ion-item>
+                 <ion-item  style="background-color: #37434F;margin-bottom:50%;margin-top:50%">
+                
+               
+                 <img  menuclose="right" (click)="goToLRReceiver()" style="margin-top:100%" item-right src="assets/icon/right-arrow-angle.png">
+              </ion-item>
+                <ion-item  style="background-color: #37434F;margin-bottom:50%;margin-top:50%">
+                
+                 <img  menuclose="right" (click)="goToLRReceiver()" style="margin-top:175%" item-right src="assets/icon/right-arrow-angle.png">
+              </ion-item>
+            </ion-list>
+            
+          </div>
+        </div>
+        
+        <div class="split right">
+            <div class="vl"></div>
+           <ion-list  no-lines style=" border-bottom: 0.1px solid #c8c7cc;padding-top:80%;margin-left:10% ">
+          <ion-item menuClose="right" style="background-color:#37434F; border-top:0px; height: 50px;  border-bottom: 0.1px solid #4c5c69;" (click)="moveToCustomization()">
+           
+            <ion-label class="label-style" >Customization </ion-label>
+        </ion-item>
+        <ion-item  menuClose="right" style="background-color:#37434F; border-top:0px; height: 50px; border-bottom: 0.1px solid #4c5c69; "  (click)="moveToDeviceList()" >
+            <ion-label class="label-style" >Device List</ion-label>
+        </ion-item>
+
+        <ion-item  menuClose="right" style="background-color:#37434F; border-top:0px; height: 50px; border-bottom: 0.1px solid #4c5c69; "  (click)="moveToAudioEffect()" >
+          <ion-label class="label-style" >Audio Effect</ion-label>
+      </ion-item>
+       
+      </ion-list>  
+      <button ion-button round outline style="color:white;border-color:#4c5c69;margin-top:30%;text-transform: none;height:4.6rem;border-radius:10px;margin-left:23%;width:65%;font-size:1.8rem;" (click)="unlink()" >Unlink receiver</button> 
+        </div>
+     
+      </ion-content>
+    
+    </ion-menu>
+  
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,47 @@
+<!--
+  Generated template for the CustomizationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+     
+      <ion-buttons left (click)="moveToCustomization()">
+        <button ion-button icon-only >
+          <ion-icon item-start>  <img item-left  src="assets/icon/left-arrow-angle.png" ></ion-icon>
+        </button>
+      </ion-buttons>
+    <ion-title>Customization</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+
+<ion-list no-lines style="padding-top:10px;">
+  <ion-item (click)="bluetoothName()" >
+    <p class="para-item">Bluetooth Name</p>
+    <p style="font-size: 1.5rem; font-weight: 200;color:#4c5c69">LR-Receiver-1234</p>
+    <img  item-right src="assets/icon/right-arrow-angle.png">
+  </ion-item>
+  <ion-item (click)="moveToConnection()">
+      <p class="para-item">Connection</p>
+      <img  item-right src="assets/icon/right-arrow-angle.png">
+    </ion-item>
+    <ion-item (click)="moveToCodec()" >
+        <p class="para-item">Codec</p>
+        <img  item-right src="assets/icon/right-arrow-angle.png">
+      </ion-item>
+      <ion-item>
+          <ion-label>LED</ion-label>
+          <ion-toggle mode="ios" ></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label>Volume Sync</ion-label>
+          <ion-toggle  mode="ios" ></ion-toggle>
+          </ion-item>
+  </ion-list>
+</ion-content>
